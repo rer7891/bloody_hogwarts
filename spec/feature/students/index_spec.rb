@@ -19,6 +19,9 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_content(student_2.name)
       expect(page).to have_content(student_2.age)
       expect(page).to have_content(student_2.house)
+
+      expect(page).to have_content("The average age of students is 8.")
+
     end
   end
 end
